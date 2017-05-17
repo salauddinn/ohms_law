@@ -1,0 +1,528 @@
+
+/*Copyright  2013-2014 Iron Summit Media Strategies
+
+    URI: http://http://www.ironsummitmedia.com/
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.*/
+
+
+
+/* Global Styles */
+
+/* ------------------------------- */
+
+ body {
+    background-color: #f8f8f8;
+}
+
+/* Wrappers */
+
+/* ------------------------------- */
+
+ #wrapper {
+    width: 100%;
+    margin-top: 51px;
+    background-color:#04B173; 
+}
+
+#page-wrapper {
+    padding: 0 15px;
+    min-height: 568px;
+     background-color:rgb(209, 212, 216);
+}
+
+
+
+    
+
+.navbar-static-side ul li {
+    border-bottom:1px solid #84B899 !important;
+}
+
+/* Navigation */
+
+/* ------------------------------- */
+
+/* Top Right Navigation Dropdown Styles */
+
+ .navbar-top-links li {
+    display: inline-block;
+}
+
+.navbar-top-links li:last-child {
+    margin-right: 15px;
+}
+
+.navbar-top-links li a {
+    padding: 20px;
+    min-height: 50px;
+}
+
+.navbar-top-links .dropdown-menu li {
+    display: block;
+}
+
+.navbar-top-links .dropdown-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-top-links .dropdown-menu li a {
+    padding: 3px 20px;
+    min-height: 0;
+}
+
+.navbar-top-links .dropdown-menu li a div {
+    white-space: normal;
+}
+
+.navbar-top-links .dropdown-messages,
+.navbar-top-links .dropdown-tasks,
+.navbar-top-links .dropdown-alerts {
+    width: 310px;
+    min-width: 0;
+}
+
+.navbar-top-links .dropdown-messages {
+    margin-left: 5px;
+}
+
+.navbar-top-links .dropdown-tasks {
+    margin-left: -59px;
+}
+
+.navbar-top-links .dropdown-alerts {
+    margin-left: -123px;
+}
+
+.navbar-top-links .dropdown-user {
+    right: 0;
+    left: auto;
+}
+
+/* Sidebar Menu Styles */
+
+ .sidebar-search {
+    padding: 15px;
+}
+
+.arrow {
+    float: right;
+}
+
+.fa.arrow:before {
+    content: "\f104";
+}
+
+.active > a > .fa.arrow:before {
+    content: "\f107";
+}
+
+.nav-second-level li,
+.nav-third-level li {
+    border-bottom: none !important;
+}
+
+.nav-second-level li a {
+    padding-left: 37px;
+}
+
+.nav-third-level li a {
+    padding-left: 52px;
+}
+
+@media(min-width:768px) {
+    .navbar-static-side {
+        z-index: 1;
+        position: absolute;
+        width: 250px;
+    }
+
+    .navbar-top-links .dropdown-messages,
+    .navbar-top-links .dropdown-tasks,
+    .navbar-top-links .dropdown-alerts {
+        margin-left: auto;
+    }
+}
+
+/* Buttons */
+
+/* ------------------------------- */
+
+ .btn-outline {
+    color: inherit;
+    background-color: transparent;
+    transition: all .5s;
+}
+
+.btn-primary.btn-outline {
+    color: #428bca;
+}
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+    color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+    color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+    color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    color: #fff;
+}
+
+/* Pages */
+
+/* ------------------------------- */
+
+/* Dashboard Chat */
+
+ .chat {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.chat li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li.left .chat-body {
+    margin-left: 60px;
+}
+
+.chat li.right .chat-body {
+    margin-right: 60px;
+}
+
+.chat li .chat-body p {
+    margin: 0;
+    color: #777777;
+}
+
+.panel .slidedown .glyphicon,
+.chat .glyphicon {
+    margin-right: 5px;
+}
+
+.chat-panel .panel-body {
+    height: 280px;
+    overflow-y: scroll;
+}
+
+/* Login Page */
+
+ .login-panel {
+    margin-top: 15%;
+}
+.body-Backcolor {
+    background-color:#000;
+}
+.logo-margin {
+    margin-top:100px;
+}
+
+/* Flot Chart Containers */
+
+ .flot-chart {
+    display: block;
+    height: 400px;
+}
+
+.flot-chart-content {
+    width: 100%;
+    height: 100%;
+}
+
+/* DataTables Overrides */
+
+ table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+    background: transparent;
+}
+
+table.dataTable thead .sorting_asc:after {
+    content: "\f0de";
+    float: right;
+    font-family: fontawesome;
+}
+
+table.dataTable thead .sorting_desc:after {
+    content: "\f0dd";
+    float: right;
+    font-family: fontawesome;
+}
+
+table.dataTable thead .sorting:after {
+    content: "\f0dc";
+    float: right;
+    font-family: fontawesome;
+    color: rgba(50,50,50,.5);
+}
+
+/* Circle Buttons */
+
+ .btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.428571429;
+}
+
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.show-grid [class^="col-"] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ddd;
+    background-color: #eee !important;
+}
+
+.show-grid {
+    margin: 15px 0;
+}
+
+/*------ Krishna style ------*/
+.resistor-component {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background: url(../img/resistor.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    float: left;
+    margin-right: 10px;
+}
+.exp-area {
+    min-height: 500px;
+}
+#parallel, #series {
+    width: 0;
+    text-align: center;
+    height: 130px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: none;
+}
+#parallel.active, #series.active {
+    width: 600px;
+    opacity: 1;
+}
+#parallel:before, #parallel:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background: #000;
+    left: 142px;
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+#parallel:before {
+    top: -38px;
+}
+#parallel:after {
+    bottom: 65px;
+}
+#parallel > span, #series > span{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background: url(../img/resistor.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: rotate(90deg);
+    position: relative;
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+#parallel > span b, #series .r2 b{
+    position: absolute;
+    transform: rotate(-90deg);
+    right: 35px;
+    bottom: 30px;
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+#series > span.r1{
+    transform: none;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+}
+#series > span.r3{
+    transform: none;
+    position: absolute;
+    bottom: 50px;
+     left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+}
+#series .r1 b, #series .r3 b {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -15px;
+    opacity: 0;
+}
+#parallel > span.power-supply, #series > span.power-supply {
+    background: url(../img/power.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.power-supply:after, .power-supply:before {
+    content: "";
+    background: #000;
+    width: 20px;
+    height: 3px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    margin: auto
+}
+.power-supply:after {
+    right: 0;
+}
+.power-supply:before {
+    left: 0;
+}
+.result {
+    margin-top: 50px;
+    opacity: 0;
+     -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+/*-----Animation-----*/
+#parallel.active > span.power-supply {
+    opacity: 1;
+}
+#parallel.active > span.r1 {
+    opacity: 1;
+    transition-delay: .5s;
+}
+#parallel.active > span.r1 b {
+    opacity: 1;
+    transition-delay: 1s;
+}
+#parallel.active > span.r2 {
+    opacity: 1;
+    transition-delay: 1s;
+}
+#parallel.active > span.r2 b {
+    opacity: 1;
+    transition-delay: 1.5s;
+}
+#parallel.active > span.r3 {
+    opacity: 1;
+    transition-delay: 1.5s;
+}
+#parallel.active > span.r3 b{
+    opacity: 1;
+    transition-delay: 2s;
+}
+#parallel.active:before, #parallel.active:after{
+    width: 315px;
+    opacity: 1;
+    transition-delay: 2s
+}
+#parallel.active .result {
+    opacity: 1;
+    transition-delay: 2.5s;
+}
+
+#series.active  span.power-supply {
+    opacity: 1
+}
+#series.active > span.r1, #series.active > span.r3 {
+    opacity: 1;
+    width: 100px;
+    transition-delay: .5s;
+}
+#series.active > span.r1 b, #series.active > span.r3 b {
+    opacity: 1;
+    transition-delay: 1s;
+}
+#series.active > span.r2 {
+    opacity: 1;
+    transition-delay: 1s;
+}
+#series.active > span.r2 b{
+    opacity: 1;
+    transition-delay: 1.5s;
+}
+#series.active .result {
+    opacity: 1;
+    transition-delay: 1.5s;
+}
